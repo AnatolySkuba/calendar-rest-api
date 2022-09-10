@@ -10,11 +10,9 @@ const router = express.Router();
 
 router.get("/", ctrlWrapper(ctrl.events.listEvents));
 
-router.get("/:year/:month", ctrlWrapper(ctrl.events.getEventsByDate));
-
 router.post("/", ctrlWrapper(ctrl.events.addEvent));
 
-router.delete("/:id", isValidId, ctrlWrapper(ctrl.events.removeContact));
+router.delete("/:id", isValidId, ctrlWrapper(ctrl.events.removeEvent));
 
 router.put("/:id", isValidId, ctrlWrapper(ctrl.events.updateEvent));
 

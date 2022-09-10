@@ -1,13 +1,11 @@
 const listEvents = require("./listEvents");
-const getEventsByDate = require("./getEventsByDate");
 const addEvent = require("./addEvent");
-const removeContact = require("./removeContact");
+const removeEvent = require("./removeEvent");
 const updateEvent = require("./updateEvent");
 
 module.exports = {
     listEvents,
-    getEventsByDate,
     addEvent,
-    removeContact,
+    removeEvent,
     updateEvent,
 };
