@@ -1,7 +1,7 @@
 const { Event } = require("../../models/event");
 const RequestError = require("../../helpers/RequestError");
 
-const updateContact = async (req, res, next) => {
+const updateEvent = async (req, res, next) => {
     const { id } = req.params;
     const result = await Event.findByIdAndUpdate(id, req.body, { new: true });
     if (!result) {
@@ -10,4 +10,4 @@ const updateContact = async (req, res, next) => {
     res.json(result);
 };
 
-module.exports = updateContact;
+module.exports = updateEvent;

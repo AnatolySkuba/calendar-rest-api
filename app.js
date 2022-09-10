@@ -16,7 +16,7 @@ app.use(express.json());
 app.use("/api/events", routes.api.events);
 
 app.use((_, res) => {
-    res.status(404).json({ message: "Not found2" });
+    res.status(404).json({ message: "Not found" });
 });
 
 app.use((err, _, res, __) => {

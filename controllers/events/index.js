@@ -1,13 +1,13 @@
 const listEvents = require("./listEvents");
-const getContactById = require("./getContactById");
-const addContact = require("./addContact");
+const getEventsByDate = require("./getEventsByDate");
+const addEvent = require("./addEvent");
 const removeContact = require("./removeContact");
-const updateContact = require("./updateContact");
+const updateEvent = require("./updateEvent");
 
 module.exports = {
     listEvents,
-    getContactById,
-    addContact,
+    getEventsByDate,
+    addEvent,
     removeContact,
-    updateContact,
+    updateEvent,
 };

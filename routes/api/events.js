@@ -10,12 +10,12 @@ const router = express.Router();
 
 router.get("/", ctrlWrapper(ctrl.events.listEvents));
 
-router.get("/:id", isValidId, ctrlWrapper(ctrl.events.getContactById));
+router.get("/:year/:month", ctrlWrapper(ctrl.events.getEventsByDate));
 
-router.post("/", ctrlWrapper(ctrl.events.addContact));
+router.post("/", ctrlWrapper(ctrl.events.addEvent));
 
 router.delete("/:id", isValidId, ctrlWrapper(ctrl.events.removeContact));
 
-router.put("/:id", isValidId, ctrlWrapper(ctrl.events.updateContact));
+router.put("/:id", isValidId, ctrlWrapper(ctrl.events.updateEvent));
 
 module.exports = router;
