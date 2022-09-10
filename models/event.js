@@ -19,6 +19,9 @@ const eventSchema = new Schema(
         currentDate: {
             type: String,
         },
+        updated: {
+            type: Boolean,
+        },
     },
     { versionKey: false, timestamps: true }
 );
