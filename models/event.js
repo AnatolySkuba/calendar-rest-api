@@ -10,8 +10,9 @@ const eventSchema = new Schema(
             type: String,
         },
         date: {
-            type: String,
-            required: [true, "Set date for event"],
+            year: { type: String, required: [true, "Set year for event"] },
+            month: { type: String, required: [true, "Set month for event"] },
+            day: { type: String, required: [true, "Set day for event"] },
         },
         time: {
             type: String,

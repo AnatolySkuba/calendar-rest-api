@@ -16,5 +16,3 @@ mongoose
         console.log(`Server not running. Error message: ${err.message}`);
         process.exit(1);
     });
-
-// https://calendarrestapi.herokuapp.com/api/events
