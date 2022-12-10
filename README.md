@@ -1,3 +1,3 @@
 REST API for calendar
-https://calendar-git-main-anatoliiskuba.vercel.app/Calendar/
-https://github.com/AnatoliiSkuba/Calendar
+https://calendar-git-main-anatolyskuba.vercel.app/Calendar/
+https://github.com/AnatolySkuba/Calendar
